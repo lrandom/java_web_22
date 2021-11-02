@@ -14,6 +14,10 @@
         <element id="directory" name="classes">
           <element id="module-output" name="Java22" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.13" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.6.1" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/Java22-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
