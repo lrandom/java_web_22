@@ -29,7 +29,7 @@ public class ContactServlet extends HttpServlet {
         //kết nối vào CSDL để chèn vào bảng contact
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/javaweb_22", "root", "koodinh@");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/javaweb_22?autoReconnect=true&useSSL=false", "root", "koodinh@");
             PreparedStatement prp = conn.prepareStatement("INSERT INTO contacts(full_name,email,note) VALUES(?,?,?)");
             prp.setString(1, fullName);
             prp.setString(2, email);
@@ -37,7 +37,7 @@ public class ContactServlet extends HttpServlet {
             int count = prp.executeUpdate();
             if (count > 0) {
                 System.out.println("Insert thành văn công");
-            }else{
+            } else {
                 System.out.println("Insert thất văn bại");
             }
         } catch (Exception e) {
