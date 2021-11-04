@@ -22,5 +22,37 @@
         <servlet-name>ContactServlet</servlet-name>
         <url-pattern>/contact</url-pattern>
     </servlet-mapping>
-    
+
+
+    <servlet>
+        <servlet-name>SessionServlet</servlet-name>
+        <servlet-class>niit.java.java22.SessionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SessionServlet</servlet-name>
+        <url-pattern>/session</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetSessionServlet</servlet-name>
+        <servlet-class>niit.java.java22.GetSessionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetSessionServlet</servlet-name>
+        <url-pattern>/get-session</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ListProductServlet</servlet-name>
+        <servlet-class>niit.java.java22.ListProductServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ListProductServlet</servlet-name>
+        <url-pattern>/list-product</url-pattern>
+    </servlet-mapping>
+
 </web-app>
