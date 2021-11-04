@@ -14,17 +14,17 @@
 <body>
 <div class="md:mx-10 mx-2">
     <h1 class="font-bold text-center text-lg">List of products</h1>
-    <div class="grid grid-cols-2 gap-2">
+    <div class="grid grid-cols-3 gap-10">
         <%
             ArrayList<Product> products = (ArrayList<Product>) request.getAttribute("listProduct");
             for (Product product : products) {
         %>
 
-        <div class="shadow md:col-span-1 col-span-10 bg-white">
-            <h3 class="text-base font-bold"><%= product.getName() %>
+        <div class="shadow md:col-span-1 col-span-10 bg-white p-2 rounded space-y-5">
+            <h3 class="text-lg font-bold"><%= product.getName() %>
             </h3>
-            <img class="w-full h-18 object-fit" src="<%= product.getImage() %>" alt="<%= product.getName() %>">
-            <p class="text-sm font-bold text-red-500"><%= product.getPrice() %>
+            <img class="w-full max-h-64 object-cover" src="<%= product.getImage() %>" alt="<%= product.getName() %>">
+            <p class="text-base font-bold text-red-500"><%= product.getPrice() %>
             </p>
         </div>
         <%
