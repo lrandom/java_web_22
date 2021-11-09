@@ -12,7 +12,7 @@
 <head>
     <title>Cart</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/Java22-1.0-SNAPSHOT/styles/style.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/styles/style.css">
 </head>
 <body>
 <div class="md:mx-10 mx-2">
