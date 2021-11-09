@@ -25,6 +25,9 @@
             <img class="w-full max-h-64 object-cover" src="<%= product.getImage() %>" alt="<%= product.getName() %>">
             <p class="text-base font-bold text-red-500"><%= product.getPrice() %>
             </p>
+            <div>
+                <a href="?id=<%=product.getId()%>">Thêm vào giỏ hàng</a>
+            </div>
         </div>
         <%
             }

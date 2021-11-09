@@ -47,12 +47,23 @@
 
     <servlet>
         <servlet-name>ListProductServlet</servlet-name>
-        <servlet-class>niit.java.java22.ListProductServlet</servlet-class>
+        <servlet-class>niit.java.java22.cart.ListProductServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>ListProductServlet</servlet-name>
         <url-pattern>/list-product</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ServletCart</servlet-name>
+        <servlet-class>niit.java.java22.cart.ServletCart</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletCart</servlet-name>
+        <url-pattern>/cart</url-pattern>
     </servlet-mapping>
 
 </web-app>

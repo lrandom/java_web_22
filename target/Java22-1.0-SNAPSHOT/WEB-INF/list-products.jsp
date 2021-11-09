@@ -19,13 +19,15 @@
             ArrayList<Product> products = (ArrayList<Product>) request.getAttribute("listProduct");
             for (Product product : products) {
         %>
-
         <div class="shadow md:col-span-1 col-span-10 bg-white p-2 rounded space-y-5">
             <h3 class="text-lg font-bold"><%= product.getName() %>
             </h3>
             <img class="w-full max-h-64 object-cover" src="<%= product.getImage() %>" alt="<%= product.getName() %>">
             <p class="text-base font-bold text-red-500"><%= product.getPrice() %>
             </p>
+            <div>
+                <a href="?id=<%=product.getId()%>">Thêm vào giỏ hàng</a>
+            </div>
         </div>
         <%
             }
